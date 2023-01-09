@@ -1,6 +1,17 @@
 # Magical-Fingers
 
+# Opencv
 
+
+[OpenCV](https://opencv.org/) is the huge open-source library for the computer vision, machine learning, and image processing and now it plays a major role in real-time operation
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Opencv.
+
+```bash
+pip install opencv-python
+```
 
 
 # Mediapipe
@@ -29,20 +40,9 @@ pip install PyAutoGUI
 ```
 
 
-# Opencv
 
 
-[OpenCV](https://opencv.org/) is the huge open-source library for the computer vision, machine learning, and image processing and now it plays a major role in real-time operation
-
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Opencv.
-
-```bash
-pip install opencv-python
-```
-
-# NumPy
+<!-- # NumPy
 
 
 [NumPy](https://numpy.org/) is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
@@ -52,8 +52,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install NumPy.
 
 ```bash
 pip install numpy
-```
-# Pycaw
+``` -->
+<!-- # Pycaw
 
 
 [Pycaw](https://github.com/AndreMiras/pycaw) is the library for audio controls
@@ -64,23 +64,33 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Pycaw.
 
 ```bash
 pip install pycaw
-```
+``` -->
 
 
 ## Code
 
 ```
-from ctypes import cast, POINTER
-from comtypes import CLSCTX_ALL
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-devices = AudioUtilities.GetSpeakers()
-interface = devices.Activate(
-    IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-volume = cast(interface, POINTER(IAudioEndpointVolume))
-volume.GetMute()
-volume.GetMasterVolumeLevel()
-volume.GetVolumeRange()
-volume.SetMasterVolumeLevel(-20.0, None)
+import cv2
+from math import sqrt
+import win32api
+import pyautogui
+
+mp_drawing = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands
+
+rclick = 0  #right click
+click = 0   #left click
+dclick = 0  #double click
+scroll = 0  #scroll down
+
+
+video = cv2.VideoCapture(0)
+
+
+with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8) as hands:
+    #to manage smoothening according to camera quality,background disturbance
+    while video.isOpened():
+        _, picture = video.read()
 ```
 
 ### RESULTS
@@ -90,19 +100,18 @@ volume.SetMasterVolumeLevel(-20.0, None)
 
 # Controls
 
-1) Close Hand:-Mode Selection<br/>
 
-2) Cursor Mode:-Open Hand<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Move Cursor:- Thumb (up) + Index Finger (up) + other 3 fingers (down)<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Left Click:-  Thumb (down) + Index Finger (up) + other 3 fingers (down)<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Right click:- Thumb (up) + Index Finger (down) + Middle finger (down) + Ring finger (down) + little finger (up)
+1) Cursor Mode:-Open Hand<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Move Cursor:- Index finger acts like a mouse cursor<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Left Click:-  Point thumb inwards (towards your palm)<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Right click:- Join little finger and thumb
     
-3) Volume:-Index finger + Thumb<br/>
 
-4) Scroll:-Index finger +Middle finger + Ring finger<br/>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) scroll up:-Index finger +Middle finger + Ring finger<br/>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) scroll down:-Index finger +Middle finger + Ring finger + little finger<br/>
+
+3) Scroll:<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) scroll up:Join index finger and thumb finger<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) scroll down:Join middle finger and thumb finger<br/>
  
-## 🔗LINK TO THE VIDEO
+<!-- ## 🔗LINK TO THE VIDEO
 
-https://drive.google.com/file/d/1bTrFoFH_yenro0C8AjXu9_BQFtGJy3Gg/view?usp=sharing
+https://drive.google.com/file/d/1bTrFoFH_yenro0C8AjXu9_BQFtGJy3Gg/view?usp=sharing -->
