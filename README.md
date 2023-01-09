@@ -70,6 +70,9 @@ pip install pycaw
 ## Code
 
 ```
+
+...
+
 import cv2
 from math import sqrt
 import win32api
@@ -91,6 +94,9 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8) a
     #to manage smoothening according to camera quality,background disturbance
     while video.isOpened():
         _, picture = video.read()
+        
+        ....
+        
 ```
 
 ### RESULTS
