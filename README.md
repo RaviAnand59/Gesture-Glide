@@ -1,5 +1,17 @@
 # Magical-Fingers
 
+# Description
+ Meet my new virtual AI mouse - a smart, interactive companion for all your computing needs!
+ With its advanced artificial intelligence, my virtual mouse can adapt to my unique habits and preferences for a seamless computing experience.
+ Whether I'm browsing the web, working on a document, or playing a game, my virtual AI mouse is always there to make things easier and more fun.
+
+# Win32-API
+
+The Win32 API is a powerful tool for developing software applications on the Windows platform.
+With the Win32 API, you can access the full range of functionality provided by the Windows operating system.
+
+
+
 # Opencv
 
 
