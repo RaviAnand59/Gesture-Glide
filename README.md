@@ -95,12 +95,12 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8) a
     while video.isOpened():
         _, picture = video.read()
         
-        ....
+....
         
 ```
 
 ### RESULTS
-<img src="https://imgur.com/I1tt2T7.gif" width="500" height="300">
+<img src="https://i.ytimg.com/vi/iBwMi9iDZmQ/maxresdefault.jpg" width="500" height="300">
 
 
 
@@ -117,6 +117,10 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8) a
 3) Scroll:<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) scroll up:Join index finger and thumb finger<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) scroll down:Join middle finger and thumb finger<br/>
+ 
+# Benefits:
+1) Any possible mouse function can easily be added by a small change in this code.
+2) The code is written in such a way that any newbie can understand and make changes in the code in one go.
  
 <!-- ## 🔗LINK TO THE VIDEO
 
