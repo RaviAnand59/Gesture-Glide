@@ -1,4 +1,4 @@
-# Magical-Fingers
+# Gesture-Glide
 
 # Description
  Meet my new virtual AI mouse - a smart, interactive companion for all your computing needs!
