@@ -1,9 +1,9 @@
 # Gesture-Glide
+## Video Link
+https://drive.google.com/file/d/1fAshGYBKH_gTPY2DgeqWQkLQKX20ot3R/view
 
 # Description
- Meet my new virtual AI mouse - a smart, interactive companion for all your computing needs!
- With its advanced artificial intelligence, my virtual mouse can adapt to my unique habits and preferences for a seamless computing experience.
- Whether I'm browsing the web, working on a document, or playing a game, my virtual AI mouse is always there to make things easier and more fun.
+Meet my technologically advanced marvel, the Virtual AI Mouse. This extraordinary creation has redefined the way we interact with computers, offering an exceptional level of control and precision through the power of hand tracking and gesture recognition. By seamlessly combining cutting-edge computer vision algorithms with intuitive user movements, this virtual mouse opens up a world of possibilities for effortless navigation and interaction. Gone are the days of conventional input devices as we embark on a journey where your gestures become commands, and your hands become the conduit of digital exploration. Get ready to experience a new era of human-computer interaction with the Virtual AI Mouse.
 
 # Win32-API
 
@@ -123,16 +123,21 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8) a
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Move Cursor:- Index finger acts like a mouse cursor<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Left Click:-  Point thumb inwards (towards your palm)<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Right click:- Join little finger and thumb
-    
+2) Volume Mode:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Increase volume:- Keep your index finger above thumb finger<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Decrease volume:-  Keep your index finger below thumb finger<br/>
 
 
 3) Scroll:<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) scroll up:Join index finger and thumb finger<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) scroll down:Join middle finger and thumb finger<br/>
+
+4)Change mode:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Press 'a' button to switch between modes(cursor and volume)<br/>
  
 # Benefits:
-1) Any possible mouse function can easily be added by a small change in this code.
-2) The code is written in such a way that any newbie can understand and make changes in the code in one go.
+1) The project provides an alternative input method that can be particularly beneficial for individuals with mobility impairments or those who find it challenging to use a traditional mouse. It allows them to control the mouse cursor using hand gestures, making computer interaction more accessible and inclusive.
+2) The project showcases innovative techniques in human-computer interaction, demonstrating the potential of gesture-based control systems.
  
 <!-- ## 🔗LINK TO THE VIDEO
 
