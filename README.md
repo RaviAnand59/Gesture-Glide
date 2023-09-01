@@ -1,6 +1,4 @@
 # Gesture-Glide
-## Video Link
-https://drive.google.com/file/d/1fAshGYBKH_gTPY2DgeqWQkLQKX20ot3R/view
 
 # Description
 Meet my technologically advanced marvel, the Virtual AI Mouse. This extraordinary creation has redefined the way we interact with computers, offering an exceptional level of control and precision through the power of hand tracking and gesture recognition. By seamlessly combining cutting-edge computer vision algorithms with intuitive user movements, this virtual mouse opens up a world of possibilities for effortless navigation and interaction. Gone are the days of conventional input devices as we embark on a journey where your gestures become commands, and your hands become the conduit of digital exploration. Get ready to experience a new era of human-computer interaction with the Virtual AI Mouse.
